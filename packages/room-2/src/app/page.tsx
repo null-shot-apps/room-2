@@ -18,7 +18,7 @@ export default function SoccerGame() {
   const ballRef = useRef<Position>({ x: 400, y: 250 });
   const ballVelocityRef = useRef<Position>({ x: 0, y: 0 });
   const keysRef = useRef<Set<string>>(new Set());
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
 
   useEffect(() => {
     if (!gameStarted) return;
